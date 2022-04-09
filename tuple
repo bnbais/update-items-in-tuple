@@ -1,0 +1,12 @@
+# Because of tuple is immutable we cannot update items of tuple. If we want to update items, firstly convert tuple into list, update items and again conert list into tuple
+x = ("apple", "banana", "cherry")
+#converting tuple into list
+y = list(x)
+# update items
+y[1] = "kiwi"
+# converting list into tuple
+
+x = tuple(y)
+
+print(x)
+
